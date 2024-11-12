@@ -228,7 +228,7 @@ header nav{
     width: 100%;
     max-width: 800px;
     padding: 0 25px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 #articles-container h2{
@@ -325,6 +325,128 @@ header nav{
     margin: 0 10px 15px;
 }
 
+
+/* FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: var(--dark);
+    height: 1px;
+    left : 50%;
+    transform: translate(-50%);
+}
+
+footer .tops{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .tops li::marker{
+    font-size: .8125rem;
+    font-weight: 500;
+}
+
+footer .tops h4{
+    font-size: .875rem;
+    color: var(--pop);
+    color: var(--dark);
+    text-decoration: none;
+}
+
+footer .tops a{
+    font-size: .8125rem;
+    text-decoration: none;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+footer .mentions{
+    text-align: center;
+    background-color: var(--dark);
+    padding-bottom: 60px;
+}
+
+footer .mentions .logo-img{
+    width: 140px;
+    margin: 30px auto;
+}
+
+
+footer .mentions .socials{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 40px auto ;
+}
+
+footer .mentions .socials a{
+    cursor: pointer;
+}
+
+footer .mentions .socials svg path{
+    fill: var(--light);
+}
+
+footer .mentions ul li a{
+    color: var(--light);
+    font-size: .75rem;
+    font-weight: 300;
+    font-family: var(--open);
+    text-decoration: none;
+}
+
+
+footer .fixed-header{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--dark);
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .fixed-header input{
+    border-radius: 25px 0 0 25px ;
+    border: none;
+    padding-left: 15px;
+    background-color: var(--light);
+    margin: 0;
+}
+
+footer .fixed-header button{
+    border-radius: 0 25px 25px 0;
+    border: none;
+    padding-left: 15px;
+    background-color: var(--light);
+    margin: 0;
+}
+
+footer .fixed-header button svg{
+    margin-right: 15px;
+}
+
+footer .fixed-header button:hover{
+    background-color: var(--cta);
+    font-weight: 500;
+    color: white;
+}
+
+footer .fixed-header button:hover svg path{
+    fill: var(--light);
+}
 
 
 
