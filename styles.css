@@ -370,6 +370,11 @@ footer .tops a{
     text-decoration: none;
 }
 
+footer .tops a:hover{
+    color: var(--cta);
+    font-weight: 500;
+}
+
 footer .mentions{
     text-align: center;
     background-color: var(--dark);
@@ -397,6 +402,10 @@ footer .mentions .socials svg path{
     fill: var(--light);
 }
 
+footer .mentions .socials svg:hover path{
+    fill: var(--cta);
+}
+
 footer .mentions ul li a{
     color: var(--light);
     font-size: .75rem;
@@ -405,6 +414,10 @@ footer .mentions ul li a{
     text-decoration: none;
 }
 
+footer .mentions ul li a:hover{
+    color: var(--cta);
+    font-weight: 400;
+}
 
 footer .fixed-header{
     position: fixed;
@@ -424,6 +437,10 @@ footer .fixed-header input{
     padding-left: 15px;
     background-color: var(--light);
     margin: 0;
+}
+
+footer .fixed-header input::placeholder{
+    font-size: .75rem;
 }
 
 footer .fixed-header button{
@@ -464,12 +481,14 @@ footer .fixed-header button:hover svg path{
 
 
 
+
 /* HOVER */
 button:hover{
     background-color: var(--cta);
     font-weight: 500;
     color: white;
 }
+
 
 
 
