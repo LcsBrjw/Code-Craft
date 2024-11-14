@@ -26,8 +26,9 @@ header{
     height: 50px;
     width: 100%;
     background-color: var(--dark);
-    position: fixed;
-    box-shadow: 0 5px 10px var(--dark);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--light);
 }
 
 header nav{
@@ -42,6 +43,16 @@ header nav{
     width: auto;
     align-items: center;
     margin: 0 auto;
+}
+
+header nav path{
+    fill: var(--light);
+}
+
+header .logo-right {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
 }
 
 
@@ -101,15 +112,189 @@ header nav{
 
 
 
+/* BURGER-NAVIGATION */
+#burger-nav{
+    position: absolute;
+    display: none;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    height: 250px;
+    background-color: var(--dark);
+    text-align: center;
+    border-radius: 0 0 0 25px;
+    box-shadow: -5px 10px 5px rgba(0,0,0,0.1);
+}
+
+#burger-nav.active{
+    display: block;
+}
+
+#burger-nav .connexion form{
+    text-align: right;
+    margin: 0 20px;
+}
+
+
+
+
+#burger-nav nav ul li{
+    text-align: center;
+    margin: 25px auto;
+}
+
+
+
+#burger-nav nav ul li a{
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.25rem;
+    font-size: var(--pop);
+}
+
+#burger-nav nav ul li a:hover{
+    color: var(--cta);
+    font-weight: 600;
+}
+
+
+
+
+#burger-nav button:hover{
+    background-color: var(--cta);
+    font-weight: 500;
+    color: var(--light);
+    font-size: 1rem;
+}
+
+/* LOGIN-SIGNIN */
+#sign-log{
+    display: none;
+    position: sticky;
+    background-color: var(--dark);
+    width: calc(50% - 10px);
+    height: 60px;
+    top: 50px;
+    left: 50%;
+    justify-content: space-evenly;
+    border-radius: 0 0 25px 25px;
+    border: 1px solid var(--light);
+    border-top: none;
+}
+
+#sign-log.active{
+    display: flex;
+}
+
+
+#sign-log button{
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+    font-size: .875rem;
+    font-family: var(--open);
+    color: var(--dark);
+    border-radius: 5px;
+    border: none;
+}
+
+#sign-log button:hover{
+    background-color: var(--cta);
+    font-weight: 500;
+    color: var(--light);
+}
+
+/* LOGIN WINDOW */
+#login{
+    display: none;
+    position: sticky;
+    background-color: var(--dark);
+    width: calc(50% - 10px);
+    height: 275px;
+    top: 50px;
+    left: 50%;
+    justify-content: space-evenly;
+    border-radius: 0 0 25px 25px;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid var(--light);
+    border-top: none;
+}
+
+#login.active{
+    display: flex;
+}
+
+#login form label{
+    font-size: .875rem;
+    color: var(--light);
+    margin: 0 10px;
+}
+
+#login input{
+    width: 150px;
+    height: 25px;
+    margin: 0;
+    border-radius: 5px;
+    border: none;
+}
+
+#login button{
+    margin: 20px 0 0 0;
+    width: 120px;
+    height: 32px;
+    font-size: .875rem;
+    font-family: var(--open);
+    color: var(--dark);
+    border-radius: 5px;
+    border: none;
+}
+
+
+#login button:hover{
+    background-color: var(--cta);
+    font-weight: 500;
+    color: var(--light);
+}
+
+#login #annul{
+    height: 20px;
+    width: 80px;
+    font-size: .75rem;
+    font-family: var(--open);
+    color: var(--light);
+    border-radius: 5px;
+    border: solid 1px var(--light);
+    background-color: var(--dark);
+}
+
+#login #annul:hover{
+    height: 20px;
+    width: 80px;
+    font-size: .75rem;
+    font-family: var(--open);
+    color: var(--dark);
+    border-radius: 5px;
+    border: solid 1px var(--light);
+    background-color: var(--light);
+}
+
+
+
+
+
+
+
+
 
 /* HERO */
-#hero{
+main{
     width: 100%;
     padding: 80px 30px 0px;
     text-align: center;
 }
 
-#hero .hero-card{
+main .hero-card{
     background-color: var(--dark);
     padding: 30px;
     border-radius: 5px;
@@ -119,7 +304,7 @@ header nav{
 
 
 
-#hero h1{
+main h1{
     font-family: var(--pop);
     font-size: 2.5rem ;
     line-height: 2rem;
@@ -130,19 +315,19 @@ header nav{
     margin-bottom: 0;
 }
 
-#hero img{
+main img{
     width: 50% ;
     max-width: 400px;
     margin: 0 auto 25px;
     border-radius: 5px;
 }
 
-#hero h3{
+main h3{
     font-size: 1rem;
     color: var(--light);
 }
 
-#hero .card-author{
+main .card-author{
     font-family: var(--open);
     font-size: .75rem;
     text-align: left;
@@ -151,7 +336,7 @@ header nav{
     margin: 35px 0 10px 0;
 }
 
-#hero .card-txt{
+main .card-txt{
     text-align: center;
     font-family: var(--open);
     color: var(--light);
@@ -160,7 +345,7 @@ header nav{
     margin: 0 auto;
 }
 
-#hero button{
+main button{
     width: 155px;
     margin: 25px;
     border-radius: 5px;
@@ -170,18 +355,18 @@ header nav{
     cursor: pointer;
 }
 
-#hero button:hover{
+main button:hover{
     background-color: var(--cta);
     font-weight: 500;
     color: var(--light);
 }
 
-#hero .tags{
+main .tags{
     display: flex;
     justify-content: center;
 }
 
-#hero span{
+main span{
     font-size: .625rem;
     color: var(--dark);
     background-color: var(--light);
@@ -190,7 +375,7 @@ header nav{
     margin: 0 10px;
 }
 
-#hero a{
+main a{
     text-decoration: none;
 }
 
@@ -427,9 +612,11 @@ footer .fixed-header{
     height: 50px;
     border-top: 1px solid var(--light);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+
 
 footer .fixed-header input{
     border-radius: 25px 0 0 25px ;
@@ -482,11 +669,21 @@ footer .fixed-header button:hover svg path{
 
 
 
-/* HOVER */
-button:hover{
-    background-color: var(--cta);
-    font-weight: 500;
-    color: white;
+/* USER-ONLY // INV-ONLY */
+.user-only{
+    display: none;;
+}
+
+.user-only.active{
+    display: block;;
+}
+
+.invite-only{
+    display: block;;
+}
+
+.invite-only.active{
+    display: none;;
 }
 
 

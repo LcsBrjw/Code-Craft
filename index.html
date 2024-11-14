@@ -19,91 +19,127 @@
             <div class="logo">
                 <a href="index.html"><img src="./src/img/logo-dark.png" alt="" height="40" ></a>
             </div>
-            <button id="burger-menu">
-                    <div class="burger-icon">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </div>
-            </button>
+            <div class="logo-right">
+                <svg id="user-img" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8204.333374c2.1898 0 4.2898.877976 5.8382 2.440776 1.5484 1.5628 2.4183 3.68242 2.4183 5.89256 0 2.21009-.8699 4.32979-2.4183 5.89259C21.1102 16.1221 19.0102 17 16.8204 17c-2.1898 0-4.2899-.8779-5.8383-2.4407-1.54837-1.5628-2.41825-3.6825-2.41825-5.89259 0-2.21014.86988-4.32976 2.41825-5.89256 1.5484-1.5628 3.6485-2.440776 5.8383-2.440776Zm0 20.833326c9.1235 0 16.5131 3.7292 16.5131 8.3333v4.1667H.307312V29.5c0-4.6041 7.389598-8.3333 16.513088-8.3333Z" fill="#000"/></svg>
+                <button id="burger-menu">
+                        <div class="burger-icon">
+                            <span class="top-bar"></span>
+                            <span class="middle-bar"></span>
+                            <span class="bottom-bar"></span>
+                        </div>
+                </button>
+            </div>
         </nav>
     </header>
+   
     
-    
+
+    <section id="burger-nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JavaScript</a></li>
+                <li><a href="">UI/UX</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="sign-log" class="inv-only">
+        <button id="login-button" type="submit">Se connecter</button>
+        <button type="submit">S'inscrire</button>
+    </section>
+
+
+    <section id="login" class="inv-only">
+        <div class="connexion">
+            <form action="connexion" method="POST">
+                <label for="username">Nom d'utilisateur</label> <br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Mot de passe</label> <br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Se connecter</button>
+            </form>
+            <button id="annul">Annuler</button>
+        </div>
+    </section>
+  
+
 
     <main>
-        <section id="hero">
-            <h1>A la une</h1>
-            <div class="hero-card">
-                <div class="hero-card-img">
-                    <a href=""><img src="./src/img/banner-melvynx-mobil.png" alt=""></a>
-                </div>
-                <h3>Apprendre JavaScript en juste 5 MINUTES   </h3>
-                <p class="card-author">by Melvynk</p>
-                <p class="card-txt">Dans cette vidéo, je vais vous guider à travers les concepts essentiels de Javascript, depuis les variables et les types de données jusqu'aux boucles et aux fonctions. </p>
-                <button>Voir plus  >></button>
-                <div class="tags">
-                    <span><a href="">javascript</a></span>
-                    <span><a href="">tuto</a></span>
-                    <span><a href="">video</a></span>
-                </div>
+        <h1>A la une</h1>
+        <div class="hero-card">
+            <div class="hero-card-img">
+                <a href=""><img src="./src/img/banner-melvynx-mobil.png" alt=""></a>
             </div>
-        </section>
-
-        <section id="banner">
-            <h4 class="banner-txt"> Toutes les ressources dont vous avez besoin pour créer le web de demain.</h4>
-        </section>
-
-        <section id="articles-container">
-            <h2>Derniers articles</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
-                    <div class="card-txt">    
-                        <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
-                        <p class="card-author">by Deathmuk</p>
-                        <button>Voir plus >></button>
-                        <div class="card-tags"><span>git</span><span>tuto</span></div>
-                    </div>
-                </div>
+            <h3>Apprendre JavaScript en juste 5 MINUTES   </h3>
+            <p class="card-author">by Melvynk</p>
+            <p class="card-txt">Dans cette vidéo, je vais vous guider à travers les concepts essentiels de Javascript, depuis les variables et les types de données jusqu'aux boucles et aux fonctions. </p>
+            <button>Voir plus  >></button>
+            <div class="tags">
+                <span><a href="">javascript</a></span>
+                <span><a href="">tuto</a></span>
+                <span><a href="">video</a></span>
             </div>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
-                    <div class="card-txt">    
-                        <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
-                        <p class="card-author">by Deathmuk</p>
-                        <button>Voir plus >></button>
-                        <div class="card-tags"><span>git</span><span>tuto</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
-                    <div class="card-txt">    
-                        <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
-                        <p class="card-author">by Deathmuk</p>
-                        <button>Voir plus >></button>
-                        <div class="card-tags"><span>git</span><span>tuto</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
-                    <div class="card-txt">    
-                        <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
-                        <p class="card-author">by Deathmuk</p>
-                        <button>Voir plus >></button>
-                        <div class="card-tags"><span>git</span><span>tuto</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
+        </div>
     </main>
+
+
+    <section id="banner">
+        <h4 class="banner-txt"> Toutes les ressources dont vous avez besoin pour créer le web de demain.</h4>
+    </section>
+
+
+
+    <section id="articles-container">
+        <h2>Derniers articles</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
+                <div class="card-txt">    
+                    <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
+                    <p class="card-author">by Deathmuk</p>
+                    <button>Voir plus >></button>
+                    <div class="card-tags"><span>git</span><span>tuto</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
+                <div class="card-txt">    
+                    <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
+                    <p class="card-author">by Deathmuk</p>
+                    <button>Voir plus >></button>
+                    <div class="card-tags"><span>git</span><span>tuto</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
+                <div class="card-txt">    
+                    <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
+                    <p class="card-author">by Deathmuk</p>
+                    <button>Voir plus >></button>
+                    <div class="card-tags"><span>git</span><span>tuto</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img"><img src="./src/img/banner-github-mobil.png" alt=""></div>
+                <div class="card-txt">    
+                    <h3 class="card-title">Comment définir le nom d'utilisateur et le mot de passe Git dans GitBash ?</h3>
+                    <p class="card-author">by Deathmuk</p>
+                    <button>Voir plus >></button>
+                    <div class="card-tags"><span>git</span><span>tuto</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
 
@@ -150,10 +186,12 @@
             </ul>
         </div>
         <div class="fixed-header">
+            <svg class="user-only" width="28" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="23"><path d="M14.625 21H3.375c-.49728 0-.97419-.1975-1.32583-.5492C1.69754 20.0992 1.5 19.6223 1.5 19.125V2.875c0-.49728.19754-.97419.54917-1.32583C2.40081 1.19754 2.87772 1 3.375 1h21.25c.4973 0 .9742.19754 1.3258.54917.3517.35164.5492.82855.5492 1.32583v8.7131" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.5 2.875c0-.49728.19754-.97419.54917-1.32583C2.40081 1.19754 2.87772 1 3.375 1h21.25c.4973 0 .9742.19754 1.3258.54917.3517.35164.5492.82855.5492 1.32583V8.5h-25V2.875Z" fill="#fff" stroke="#fff" stroke-width="2"/><path d="M19 17.875h7.5m-3.75-3.75v7.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 4.75c0-.69036.55964-1.25 1.25-1.25s1.25.55964 1.25 1.25S5.94036 6 5.25 6 4 5.44036 4 4.75ZM7.75 4.75c0-.69036.55964-1.25 1.25-1.25s1.25.55964 1.25 1.25S9.69036 6 9 6s-1.25-.55964-1.25-1.25Z" fill="#000"/></mask><g mask="url(#a)"><path d="M-1-4h30v30H-1V-4Z" fill="#fff"/></g></svg>
             <form action="search" method="GET" class="search-bar">
                 <input type="search" name="query" placeholder="Rechercher..." aria-label="Search" required>
                 <button type="submit"><svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8191 12 7.56422 7.8c-.3377.26667-.72604.47778-1.16504.63333-.439.15556-.90613.23334-1.40141.23334-1.22695 0-2.26535-.41945-3.1152-1.25834S.607788 5.54444.607788 4.33333c0-1.21111.424932-2.23611 1.274782-3.075C2.73242.419444 3.77082 0 4.99777 0c1.22694 0 2.26534.419444 3.11519 1.25833.84986.83889 1.27478 1.86389 1.27478 3.075 0 .48889-.07879.95-.23638 1.38334-.15759.43333-.37146.81666-.64161 1.15l4.25495 4.20003-.9456.9333ZM4.99777 7.33333c.84422 0 1.56182-.29166 2.15277-.875.59096-.58333.88644-1.29166.88644-2.125 0-.83333-.29548-1.54166-.88644-2.125-.59095-.58333-1.30855-.875-2.15277-.875-.84423 0-1.56182.29167-2.15278.875-.59096.58334-.88644 1.29167-.88644 2.125 0 .83334.29548 1.54167.88644 2.125.59096.58334 1.30855.875 2.15278.875Z" fill="#1D1B20"/></svg></button>
             </form>
+            <svg class="user-only" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.49996 10.5v3.75a1.249966 1.249966 0 0 1-.1325.56L3.77496 18H22.23l-1.595-3.19c-.088-.1736-.1343-.3654-.135-.56V10.5c0-1.98912-.7902-3.89678-2.1967-5.3033C16.8967 3.79018 14.9891 3 13 3c-1.9892 0-3.89682.79018-5.30334 2.1967-1.40653 1.40652-2.1967 3.31418-2.1967 5.3033Zm2.5 10h-6.25c-.21316 0-.42278-.0545-.60893-.1584a1.249274 1.249274 0 0 1-.454643-.4349c-.111983-.1814-.175722-.3884-.185161-.6013a1.250134 1.250134 0 0 1 .131232-.6154l2.367502-4.735V10.5c0-2.65216 1.05357-5.1957 2.92893-7.07107C7.80425 1.55357 10.3478.5 13 .5c2.6521 0 5.1957 1.05357 7.071 2.92893C21.9464 5.3043 23 7.84784 23 10.5v3.455l2.3675 4.735c.0955.1906.1406.4024.1312.6154-.0094.2129-.0732.4199-.1852.6013-.112.1814-.2685.3311-.4546.4349-.1862.1039-.3958.1584-.6089.1584H18c0 1.3261-.5268 2.5979-1.4645 3.5355C15.5978 24.9732 14.326 25.5 13 25.5c-1.3261 0-2.5979-.5268-3.53558-1.4645-.93768-.9376-1.46446-2.2094-1.46446-3.5355Zm7.50004 0h-5c0 .663.2634 1.2989.7322 1.7678C11.701 22.7366 12.3369 23 13 23c.663 0 1.2989-.2634 1.7677-.7322.4689-.4689.7323-1.1048.7323-1.7678Z" fill="#fff"/></svg>
         </div>
 
     </footer>
