@@ -55,6 +55,60 @@ header .logo-right {
     justify-content: space-between;
 }
 
+.tags-nav {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    background-color: var(--light);
+    z-index: 1;
+}
+
+header .tags-nav ul {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    /* padding: 0 20px; */
+    flex-direction: row;
+    margin: 15px auto;
+    align-items: center;
+    justify-content: start;
+    overflow-y: hidden;
+}
+
+header .tags-nav ul::-webkit-scrollbar {
+    height: 5px;
+}
+
+header .tags-nav ul::-webkit-scrollbar-track {
+    background-color: var(--light);
+    border-radius: 10px;
+}
+
+header .tags-nav ul::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+header .tags-nav ul::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark);
+}
+
+header .tags-links{
+    margin: 0;
+} 
+
+
+
+header .tags-nav ul li a{
+    text-decoration: none;
+    margin: 0 5px;
+    background-color: var(--primary);
+    padding: 4px 8px;
+    border-radius: 25px;
+    color: var(--light);
+}
+
 
 
 
@@ -114,7 +168,7 @@ header .logo-right {
 
 /* BURGER-NAVIGATION */
 #burger-nav{
-    position: absolute;
+    position: fixed;
     display: none;
     top: 50px;
     right: 0;
@@ -170,16 +224,18 @@ header .logo-right {
 /* LOGIN-SIGNIN */
 #sign-log{
     display: none;
-    position: sticky;
+    position: fixed;
     background-color: var(--dark);
-    width: calc(50% - 10px);
+    width: calc(100% - 10px);
     height: 60px;
     top: 50px;
     left: 50%;
+    transform: translate(-50%);
     justify-content: space-evenly;
     border-radius: 0 0 25px 25px;
     border: 1px solid var(--light);
     border-top: none;
+    z-index: 1000;
 }
 
 #sign-log.active{
@@ -207,18 +263,20 @@ header .logo-right {
 /* LOGIN WINDOW */
 #login{
     display: none;
-    position: sticky;
+    position: fixed;
     background-color: var(--dark);
-    width: calc(50% - 10px);
+    width: calc(100% - 10px);
     height: 275px;
     top: 50px;
     left: 50%;
+    transform: translate(-50%);
     justify-content: space-evenly;
     border-radius: 0 0 25px 25px;
     text-align: center;
     padding-top: 25px;
     border: 1px solid var(--light);
     border-top: none;
+    z-index: 9999;
 }
 
 #login.active{
@@ -530,9 +588,9 @@ footer::before{
 }
 
 footer .tops{
-    margin: 30px 0;
+    margin: 30px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -604,7 +662,7 @@ footer .mentions ul li a:hover{
     font-weight: 400;
 }
 
-footer .fixed-header{
+footer .fixed-footer{
     position: fixed;
     bottom: 0;
     background-color: var(--dark);
@@ -616,9 +674,14 @@ footer .fixed-header{
     align-items: center;
 }
 
+footer .fixed-footer form{
+    background-color: var(--light);
+    border-radius: 25px;
+}
 
 
-footer .fixed-header input{
+
+footer .fixed-footer input{
     border-radius: 25px 0 0 25px ;
     border: none;
     padding-left: 15px;
@@ -626,11 +689,11 @@ footer .fixed-header input{
     margin: 0;
 }
 
-footer .fixed-header input::placeholder{
+footer .fixed-footer input::placeholder{
     font-size: .75rem;
 }
 
-footer .fixed-header button{
+footer .fixed-footer button{
     border-radius: 0 25px 25px 0;
     border: none;
     padding-left: 15px;
@@ -638,17 +701,17 @@ footer .fixed-header button{
     margin: 0;
 }
 
-footer .fixed-header button svg{
+footer .fixed-footer button svg{
     margin-right: 15px;
 }
 
-footer .fixed-header button:hover{
+footer .fixed-footer button:hover{
     background-color: var(--cta);
     font-weight: 500;
     color: white;
 }
 
-footer .fixed-header button:hover svg path{
+footer .fixed-footer button:hover svg path{
     fill: var(--light);
 }
 

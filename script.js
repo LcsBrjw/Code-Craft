@@ -25,7 +25,10 @@ const signLog = document.querySelector('#sign-log');
 
 userImg.addEventListener('click', function() {
     signLog.classList.toggle('active')
-
+    burgerMenu.classList.remove('active')
+    topBar.classList.remove('active')
+    midBar.classList.remove('active')
+    botBar.classList.remove('active')
 })
 
 
@@ -36,7 +39,10 @@ const logIn = document.querySelector('#login');
 
 logButt.addEventListener('click', function() {
     logIn.classList.add('active')
+    burgerMenu.classList.remove('active')
 })
 cancButt.addEventListener('click', function() {
     logIn.classList.remove('active')
 })
+
+
