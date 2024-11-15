@@ -1,12 +1,1 @@
-<svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_151_601" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="27" height="23">
-<path d="M14.125 21H2.875C2.37772 21 1.90081 20.8025 1.54917 20.4508C1.19754 20.0992 1 19.6223 1 19.125V2.875C1 2.37772 1.19754 1.90081 1.54917 1.54917C1.90081 1.19754 2.37772 1 2.875 1H24.125C24.6223 1 25.0992 1.19754 25.4508 1.54917C25.8025 1.90081 26 2.37772 26 2.875V11.5881" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1 2.875C1 2.37772 1.19754 1.90081 1.54917 1.54917C1.90081 1.19754 2.37772 1 2.875 1H24.125C24.6223 1 25.0992 1.19754 25.4508 1.54917C25.8025 1.90081 26 2.37772 26 2.875V8.5H1V2.875Z" fill="white" stroke="white" stroke-width="2"/>
-<path d="M18.5 17.875H26M22.25 14.125V21.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.5 4.75C3.5 4.05964 4.05964 3.5 4.75 3.5C5.44036 3.5 6 4.05964 6 4.75C6 5.44036 5.44036 6 4.75 6C4.05964 6 3.5 5.44036 3.5 4.75Z" fill="black"/>
-<path d="M7.25 4.75C7.25 4.05964 7.80964 3.5 8.5 3.5C9.19036 3.5 9.75 4.05964 9.75 4.75C9.75 5.44036 9.19036 6 8.5 6C7.80964 6 7.25 5.44036 7.25 4.75Z" fill="black"/>
-</mask>
-<g mask="url(#mask0_151_601)">
-<path d="M-1.5 -4H28.5V26H-1.5V-4Z" fill="#587B98"/>
-</g>
-</svg>
+<svg width="27" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="27" height="23"><path d="M14.125 21H2.875c-.49728 0-.97419-.1975-1.32583-.5492C1.19754 20.0992 1 19.6223 1 19.125V2.875c0-.49728.19754-.97419.54917-1.32583C1.90081 1.19754 2.37772 1 2.875 1h21.25c.4973 0 .9742.19754 1.3258.54917.3517.35164.5492.82855.5492 1.32583v8.7131" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 2.875c0-.49728.19754-.97419.54917-1.32583C1.90081 1.19754 2.37772 1 2.875 1h21.25c.4973 0 .9742.19754 1.3258.54917.3517.35164.5492.82855.5492 1.32583V8.5H1V2.875Z" fill="#fff" stroke="#fff" stroke-width="2"/><path d="M18.5 17.875H26m-3.75-3.75v7.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 4.75c0-.69036.55964-1.25 1.25-1.25S6 4.05964 6 4.75 5.44036 6 4.75 6 3.5 5.44036 3.5 4.75ZM7.25 4.75c0-.69036.55964-1.25 1.25-1.25s1.25.55964 1.25 1.25S9.19036 6 8.5 6s-1.25-.55964-1.25-1.25Z" fill="#000"/></mask><g mask="url(#a)"><path d="M-1.5-4h30v30h-30V-4Z" fill="#587B98"/></g></svg>
