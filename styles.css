@@ -13,7 +13,7 @@ body{
     width: 100%;
     font-family: var(--open);
     background-color: var(--light);
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -51,6 +51,7 @@ header .search-bar{
     margin-top: 7px;
     display: none;
 }
+
 
 
 .logo img{
@@ -134,7 +135,7 @@ nav  ul::-webkit-scrollbar-thumb:hover {
 }
 
 nav .tags-links{
-    margin: 0;
+    margin: 0 0 10px;
 } 
 
 nav  ul li a{
@@ -144,6 +145,15 @@ nav  ul li a{
     padding: 4px 8px;
     border-radius: 25px;
     color: var(--light);
+}
+
+nav  ul li a:hover{
+    text-decoration: none;
+    margin: 0 5px;
+    background-color: rgba(88, 123, 152, 0.5);
+    padding: 4px 8px;
+    border-radius: 25px;
+    color: var(--dark);
 }
 
 
@@ -400,7 +410,7 @@ nav  ul li a{
 /* HERO */
 #hero{
     width: 100%;
-    padding: 100px 0 0;
+    padding: 100px 10px 0;
     text-align: center;
 }
 
@@ -408,16 +418,17 @@ nav  ul li a{
     background-color: var(--dark);
     padding: 30px;
     border-radius: 5px;
-    max-width: 590px;
+    max-width: 700px;
     margin: 0 auto;
+    height: auto;
 }
 
 
 
 #hero h1{
     font-family: var(--pop);
-    font-size: 2.5rem ;
-    line-height: 2rem;
+    font-size: clamp(2rem, 6vw, 4rem) ;
+    line-height: clamp(2rem, 6vw, 4rem) ;
     font-weight: 400;
     background: linear-gradient(180deg, rgba(0,76,116,1), rgba(0,76,116,1) 50%, rgba(0,76,116,0) 100%);
     -webkit-background-clip: text;
@@ -428,12 +439,12 @@ nav  ul li a{
 #hero img{
     width: 50% ;
     max-width: 400px;
-    margin: 0 auto 25px;
+    margin: 0 auto 15px;
     border-radius: 5px;
 }
 
 #hero h3{
-    font-size: 1rem;
+    font-size: clamp(1rem, 5vw, 2rem) ;
     color: var(--light);
 }
 
@@ -443,14 +454,14 @@ nav  ul li a{
     text-align: left;
     color: var(--light);
     text-align: center;
-    margin: 35px 0 10px 0;
+    margin: 15px 0 10px 0;
 }
 
 #hero .card-txt{
     text-align: center;
     font-family: var(--open);
     color: var(--light);
-    font-size: .875rem;
+    font-size:  clamp(.875rem, 3vw, 1rem) ;;
     max-width: 525px;
     margin: 0 auto;
 }
@@ -476,17 +487,20 @@ nav  ul li a{
     justify-content: center;
 }
 
-#hero span{
-    font-size: .625rem;
+
+#hero span a{
+    font-size: clamp(0.625rem, 3vw, 1rem);
     color: var(--dark);
     background-color: var(--light);
     border-radius: 25px;
     padding: 0 10px;
-    margin: 0 10px;
+    margin: 0 10px 25px;
+    text-decoration: none;
 }
 
-#hero a{
-    text-decoration: none;
+#hero span a:hover{
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 
@@ -529,8 +543,8 @@ nav  ul li a{
 #articles-container h2{
     text-align: center;
     font-family: var(--pop);
-    font-size: 2rem ;
-    line-height: 2rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: clamp(2rem, 6vw, 3rem);
     font-weight: 400;
     background: linear-gradient(180deg, rgba(0,76,116,1), rgba(0,76,116,1) 50%, rgba(0,76,116,0) 100%);
     -webkit-background-clip: text;
@@ -554,7 +568,7 @@ nav  ul li a{
     display: flex;
     border-radius: 5px;
     margin-bottom: 25px;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 #articles-container .card-img {
@@ -574,7 +588,7 @@ nav  ul li a{
 }
 
 #articles-container .card-txt h3{
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
     color: var(--light);
     margin: 0 auto 10px;
     font-family: var(--pop);
@@ -611,13 +625,19 @@ nav  ul li a{
     justify-content: left;
     }
 
-#articles-container .card-txt .card-tags span{
-    font-size: .625rem;
+#articles-container .card-txt .card-tags span a{
+    font-size: clamp(0.625rem, 3vw, 1rem);
     color: var(--dark);
     background-color: var(--light);
     border-radius: 25px;
     padding: 0 10px;
-    margin: 0 10px 15px;
+    margin: 0 10px 25px;
+    text-decoration: none;
+}
+
+#articles-container .card-txt .card-tags span a:hover{
+    background: rgba(88, 123, 152, 0.5);
+    color: var(--light);
 }
 
 
@@ -790,6 +810,95 @@ header button:hover svg path{
 
 
 
+/* SIGN IN */
+body{
+    width: 100%;
+    height: 100vw;
+}
+
+
+#signin{
+
+    position: relative;
+    background: var(--light);
+}
+
+main .layout1{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, var(--primary), var(--light));
+    z-index: 1;
+}
+
+main .layout2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top, var(--primary), var(--light));
+    z-index: 1;
+}
+
+#signin .logo{
+    height: 80px;
+    width: 145px;
+    z-index: 2;
+    margin: 115px auto ;
+}
+
+#signin .signin-advantages{
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+#signin .action-logo figcaption{
+    text-align: center;
+}
+
+#signin .signin-form-part{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.signin-form{
+    margin: 0 auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  max-width: 350px;
+  border-radius: 5px;
+  border: none;
+}
+
+#signin .signin-buttons{    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -840,6 +949,10 @@ header button:hover svg path{
         justify-content: center;
     }
 
+    nav .tags-links{
+        margin: 0;
+    }
+
     header .search-bar{
         display: block;
     }
@@ -851,36 +964,64 @@ header button:hover svg path{
 
 }
 
-@media screen and (min-width: 1100px){
-    body{
+@media screen and (min-width: 1024px) {
+    .test{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #articles-container {
+        width: calc(100% - 250px);
+    }
+
+    footer {
+        width: 250px;
+        position: relative;
+    }
+
+    footer .tops{
+        padding-top: 80px;
+        z-index: 1;
+        margin: 80px auto 0;
+        padding: 0 40px 0 40px  ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    
+
+    footer .tops::before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        background-color: var(--dark);
+    }
+
+    footer::before{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #articles-container {
+        justify-self: center;
+    }
+    
+    .cards-container {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto auto 1fr;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "hero hero"
-        "articles-container footer";
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 10px auto;   
+        justify-content: center;  
     }
 
-    header{
-        grid-area: header;
-    }
-
-    nav{
-        grid-area: nav;
-    }
-
-    .hero{
-        grid-area: hero;
-    }
-
-    #articles-container{
-        grid-area: articles-container;
-    }
-
-    footer{
-        grid-area: footer;
+    .card-container .card{
+        width: 600px;
+        align-self: center;
+        justify-self: center;
     }
 }

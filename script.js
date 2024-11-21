@@ -19,6 +19,13 @@ logButt.addEventListener('click', function() {
 })
 cancButt.addEventListener('click', function() {
     logIn.classList.remove('active')
+    signLog.classList.remove('active')
 })
 
 
+// NAVIGATION VERS SIGNIN
+const signButt = document.querySelector('#signin-button'); 
+
+signButt.addEventListener('click', function() {
+    window.location.href = '/signin'
+})
