@@ -27,5 +27,5 @@ cancButt.addEventListener('click', function() {
 const signButt = document.querySelector('#signin-button'); 
 
 signButt.addEventListener('click', function() {
-    window.location.href = '/signin'
-})
+    window.location.href = 'signin.html';
+});
