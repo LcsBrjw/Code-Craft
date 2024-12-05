@@ -1,31 +1,90 @@
-// CHOIX LOGIN SIGNIN
-const userImg = document.querySelector('#user-img');
-const signLog = document.querySelector('#sign-log');
+// Initialiser l'état
+let isConnected = false;
 
-userImg.addEventListener('click', function() {
-    signLog.classList.toggle('active')
-    logIn.classList.remove('active')
+// Références DOM
+const profileIcon = document.querySelector('.user-logo');
+const signLogModal = document.querySelector('#sign-log');
+const loginModal = document.querySelector('#login');
+const userPanelModal = document.querySelector('#user-panel');
 
-})
+const loginButton = document.querySelector('#login-button');
+const signinButton = document.querySelector('#signin-button');
+const connectButton = document.querySelector('#connect-button');
+const cancelLoginButton = document.querySelector('#annul');
+const disconnectButton = document.querySelector('#disconnect-button');
+
+const invOnly = document.querySelectorAll(".inv-only");
+const userOnly = document.querySelectorAll(".user-only");
+
+// Fonction pour switcher entre user-only et inv-only
+function userInvSwitch() {
+    if (isConnected) {
+        console.log(document.querySelectorAll('.user-only')); // Vérifiez les nœuds détectés
+        console.log(document.querySelectorAll('.inv-only')); // Vérifiez les nœuds détectés
+        userOnly.forEach(el => el.classList.remove("hidden"));
+        invOnly.forEach(el => el.classList.add("hidden"));
+    } else {
+        userOnly.forEach(el => el.classList.add("hidden"));
+        invOnly.forEach(el => el.classList.remove("hidden"));
+    }
+}
+
+// Fonction pour masquer toutes les modales
+function hideAllModals() {
+    signLogModal.style.display = 'none';
+    loginModal.style.display = 'none';
+    userPanelModal.style.display = 'none';
+}
+
+// Initialiser l'affichage lors du chargement de la page
+document.addEventListener('DOMContentLoaded', () => {
+    userInvSwitch(); // Appliquer l'état initial
+});
 
 
-// GESTION LOGIN
-const logButt = document.querySelector('#login-button');
-const cancButt = document.querySelector('#annul');
-const logIn = document.querySelector('#login');
+// Afficher la bonne modale au clic sur l'icône de profil
+profileIcon.addEventListener('click', () => {
+    // Si une modal est déjà ouverte, on ferme toutes les modales
+    if (signLogModal.style.display === 'block' || loginModal.style.display === 'block' || userPanelModal.style.display === 'block') {
+        hideAllModals(); // Fermer toutes les modales
+    } else {
+        // Sinon, afficher la modale correspondante
+        hideAllModals(); // Fermer toutes les modales avant d'en ouvrir une nouvelle
+        if (isConnected) {
+            userPanelModal.style.display = 'block'; // Afficher la modale utilisateur si connecté
+        } else {
+            signLogModal.style.display = 'block'; // Afficher la modale connexion/inscription si non connecté
+        }
+    }
+});
 
-logButt.addEventListener('click', function() {
-    logIn.classList.add('active')
-})
-cancButt.addEventListener('click', function() {
-    logIn.classList.remove('active')
-    signLog.classList.remove('active')
-})
+// Actions pour la modale Se connecter / S'inscrire
+loginButton.addEventListener('click', () => {
+    hideAllModals();
+    loginModal.style.display = 'block'; // Afficher la modale de connexion
+});
 
+signinButton.addEventListener('click', () => {
+    window.location.href = '/signin'; // Redirection vers la page d'inscription
+});
 
-// NAVIGATION VERS SIGNIN
-const signButt = document.querySelector('#signin-button'); 
+// Actions pour la modale de connexion
+connectButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    isConnected = true; // Changer le statut
+    hideAllModals();
+    userInvSwitch(); // Basculer les éléments visibles
+    alert('Connexion réussie !'); // Message de confirmation
+});
 
-signButt.addEventListener('click', function() {
-    window.location.href = 'signin.html';
+cancelLoginButton.addEventListener('click', () => {
+    hideAllModals(); // Fermer la modale
+});
+
+// Action pour la déconnexion
+disconnectButton.addEventListener('click', () => {
+    isConnected = false; // Réinitialiser le statut
+    hideAllModals();
+    userInvSwitch(); // Basculer les éléments visibles
+    alert('Déconnexion réussie !'); // Message de confirmation
 });
