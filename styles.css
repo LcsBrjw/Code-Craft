@@ -448,10 +448,10 @@ header button:hover svg path{
     flex-direction: column;
     top: 50px;
     right: 0;
-    width: 350px;
-    height: 500px;
+    width: auto;
+    height: auto;
     background-color: var(--dark);
-    padding:40px 0 20px;
+    padding:40px 30px 10px;
     text-align: center;
     border: 1px solid var(--light);
     border-radius: 25px;
@@ -459,26 +459,25 @@ header button:hover svg path{
 }
 
 #user-panel.active{
-    display: flex;
+    display: block;
 }
 
-#user-panel .user-action{
-    display: flex;
-    flex-direction: row;
-    margin: 30px auto;
-    justify-content: space-around;
-    cursor: pointer;
+#user-panel .user-action li{
+    border-radius: 5px;
+    padding: 10px;
 }
 
-
-
-#user-panel .user-action{
-    margin: 10px;
+#user-panel .user-action li:hover{
+    background: var(--cta);
 }
 
+#user-panel .user-action li a{
+    text-decoration: none;
+}
 
 #user-panel .action-logo figure svg path{
-    stroke: var(--primary);
+    height: 35px;
+    width: 35px;
 }
 
 #user-panel .action-logo figcaption{
@@ -487,35 +486,6 @@ header button:hover svg path{
     color: var(--light);
     font-weight: 500; 
 }
-
-
-#user-panel .user-action .action-logo:hover path{
-    fill: var(--cta);
-    stroke: var(--cta);
-}
-
-
-#user-panel p{
-    margin: 20px auto 10px;
-    font-size: 1.1rem;
-    font-family: var(--open);
-    color: var(--light);
-    font-weight: 500;
-}
-
-#user-panel a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-family: var(--open);
-    color: var(--light);
-    font-weight: 300;
-}
-
-#user-panel a:hover{
-    color: var(--cta);
-    font-weight: 400;
-}
-
 
 
 #user-panel button{
@@ -532,7 +502,6 @@ header button:hover svg path{
 
 #user-panel button:hover{
     color: var(--dark);
-    border: solid 1px var(--light);
     background-color: var(--light);
 }
 
@@ -1663,6 +1632,150 @@ font-size: 0.7rem;
     background: rgba(88, 123, 152, 0.5);
     color: var(--light);
 }
+
+/* ---------- */
+/*  SETTINGS */
+/* ---------- */
+#param{
+    width: 100%;
+    padding-top: 100px;
+}
+
+#param main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+#parametres{
+    margin: 20px auto;
+    padding: clamp(10px,4vw,50px);
+    background: var(--primary);
+    border-radius: 4px;
+    max-width: 600px;
+}
+
+#parametres details{
+    margin: 50px auto;
+    position: relative;
+}
+
+#parametres details div {
+    border-radius: 5px;
+    background: var(--light);
+    padding: 10px;
+}
+
+#parametres details:not(:last-of-type)::after {
+    content: ""; 
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    bottom: -25px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark);
+}
+
+#parametres summary{
+    color: var(--light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--pop);
+}
+
+#parametres label{
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#parametres input::placeholder{
+    color: var(--primary);
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- */
+/*  NOTIFICATIONS */
+/* ---------- */
+#notifications{
+    width: 100%;
+    padding-top: 100px;
+}
+
+#notifications main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#notifications h2{
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: var(--light);
+    font-family: var(--pop);
+    padding: 20px 25px 0;
+    margin-bottom: 20px;
+}
+
+
+#notifs-container{
+    margin: 20px auto;
+    padding: clamp(10px,4vw,50px);
+    background: var(--primary);
+    border-radius: 4px;
+    max-width: 800px;
+}
+
+#notifs-container .notif-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark);
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+#notifs-container .notif-img,
+#notifs-container .notif-redirect{
+    margin: 10px;
+}
+
+#notifs-container .notif-redirect:hover path{
+    fill: var(--cta);
+    stroke: var(--cta);
+}
+
+#notifs-container .notif-infos{
+    text-align: center;
+}
+
+#notifs-container .notif-infos h3{
+    color: var(--light);
+    font-size : clamp(1.2rem,2vw,1.3rem);
+    font-family : var(--pop);
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+#notifs-container .notif-infos p{
+   color: var(--light);
+   font-size : clamp(0.9rem,2vw,1rem);
+   font-family : var(--op);
+}
+
+
 
 
 

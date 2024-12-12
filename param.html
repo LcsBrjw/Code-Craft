@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Code&Craft - FAQ</title>
+    <title>Code&Craft - Article</title>
 </head>
 
 
 
-<body id="faq">
+<div id="param">
 
     <header>
         <div class="logo">
@@ -114,33 +114,49 @@
 
     
     <main>
-        <section class="footer-part" id="faq">
-            <h2>FAQ – Questions Fréquentes</h2>
-        <ol>
-            <li>
-                <h3>Quelles ressources sont disponibles sur le site ?</h3>
-                <p>Le site propose des ressources axées sur le développement web et le design UI/UX. Ces ressources incluent des articles, des tutoriels, des vidéos, et bien d'autres contenus informatifs. La consultation de ces ressources est ouverte à tous et entièrement gratuite.</p>
-            </li>
-            <li>
-                <h3>Pourquoi est-il nécessaire de créer un compte ?</h3>
-                <p>La création d’un compte est obligatoire pour accéder à des fonctionnalités avancées telles que la publication, le commentaire ou la validation des nouvelles ressources. Cela permet de limiter les risques de vol de contenu, de spam et d'assurer une expérience utilisateur agréable et sécurisée.</p>
-            </li>
-            <li>
-                <h3>Comment puis-je m’inscrire ?</h3>
-                <p>L’inscription est simple et gratuite. Il suffit de remplir un formulaire dédié disponible sur le site en fournissant les informations nécessaires (nom, e-mail, mot de passe, etc.). Une fois inscrit, vous pourrez profiter de toutes les fonctionnalités du site.</p>
-            </li>
-            <li>
-                <h3>Quels types de contenus puis-je partager ?</h3>
-                <p>Vous pouvez partager des articles écrits sous diverses formes : informations, nouveautés, tutoriels, etc. Il est également possible de publier des contenus vidéo pour enrichir les ressources proposées sur le site.</p>
-            </li>
-            <li>
-                <h3>Comment les publications sont-elles validées ?</h3>
-                <p>Chaque publication est soumise à un système de vote par les utilisateurs enregistrés. Ce processus communautaire garantit que seules les ressources pertinentes et de qualité sont mises en ligne.</p>
-            </li>
-        </ol>
+        <section id="parametres">
+            <div class="accordion">
+                <!-- Changer la photo de profil -->
+                <details>
+                  <summary>Changer la photo de profil</summary>
+                  <div>
+                    <label for="profilePhoto">Sélectionnez une nouvelle photo de profil :</label>
+                    <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+                  </div>
+                </details>
+              
+                <!-- Changer l'adresse mail -->
+                <details>
+                  <summary>Changer l'adresse mail</summary>
+                  <div>
+                    <label for="emailAddress">Nouvelle adresse e-mail :</label>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="exemple@domaine.com">
+                  </div>
+                </details>
+              
+                <!-- Changer le mot de passe -->
+                <details>
+                  <summary>Changer le mot de passe</summary>
+                  <div>
+                    <label for="password">Nouveau mot de passe :</label>
+                    <input type="password" id="password" name="password">
+                  </div>
+                </details>
+              
+                <!-- Activer les notifications -->
+                <details>
+                  <summary>Activer les notifications</summary>
+                  <div>
+                    <label for="notificationsToggle">Recevoir des notifications :</label>
+                    <input type="checkbox" id="notificationsToggle" name="notificationsToggle">
+                  </div>
+                </details>
+              </div>
+              
+
         </section>
     </main>
-    
+
 
 
 
