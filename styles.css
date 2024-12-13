@@ -1658,9 +1658,11 @@ font-size: 0.7rem;
 #parametres details{
     margin: 50px auto;
     position: relative;
+    cursor: pointer;
 }
 
 #parametres details div {
+    margin-top: 15px;
     border-radius: 5px;
     background: var(--light);
     padding: 10px;
@@ -1674,7 +1676,7 @@ font-size: 0.7rem;
     bottom: -25px; 
     left: 50%;
     transform: translateX(-50%);
-    background: var(--dark);
+    background: var(--light);
 }
 
 #parametres summary{
@@ -1762,12 +1764,26 @@ font-size: 0.7rem;
 }
 
 #notifs-container .notif-infos h3{
+    position: relative;
     color: var(--light);
     font-size : clamp(1.2rem,2vw,1.3rem);
     font-family : var(--pop);
     font-weight: 500;
-    margin: 0 20px;
+    margin: 15px 20px;
 }
+
+#notifs-container .notif-infos h3::after{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: var(--light);
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
 
 #notifs-container .notif-infos p{
    color: var(--light);
