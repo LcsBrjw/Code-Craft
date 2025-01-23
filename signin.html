@@ -32,30 +32,33 @@
                     <figcaption>Commenter</figcaption>
                 </div>
             </div>
-            <form action="" class="signin-form">
+            <form action="" class="signin-form" id="signin-form">
+                <div class="signin-form-part">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" placeholder="Choisissez un nom d'utilisateur">
+                </div>
                 <div class="signin-form-part">
                     <label for="email">Adresse e-mail :</label>
-                    <input type="email" placeholder="ex : xyz@xyz.fr">
+                    <input type="email" id="email" placeholder="ex : xyz@xyz.fr">
                 </div>
                 <div class="signin-form-part">
                     <label for="password">Mot de passe :</label>
-                    <input type="password">
+                    <input type="password" id="password">
                 </div>
                 <div class="signin-form-part">
                     <label for="password2">Vérifier mot de passe :</label>
-                    <input type="password">
+                    <input type="password" id="password2">
                 </div>
-
+                <div class="signin-buttons">
+                    <button type="submit" id="signin-valid">C'est parti !!</button>
+                    <a id="back-home" href="./index.html">Retour à l'accueil</a>
+                </div>
             </form>
-            <div class="signin-buttons">
-                <button type="submit" id="signin-valid">C'est parti !!</button>
-                <a id="back-home" href="./index.html">Retour à l'accueil</a>
-            </div>
+            
         </section>
     </main>
    
-<script src="script.js"></script>
-
+<script src="script-signin.js"></script>
 </body>
 
 
