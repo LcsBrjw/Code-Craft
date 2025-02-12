@@ -116,7 +116,7 @@
     <main>
         <article id="newressource">
             <h1>Créer une nouvelle ressource</h1>
-            <form action="" method="post" enctype="multipart/form-data" aria-labelledby="form-title">
+            <form id="newart-form" action="" method="post" enctype="multipart/form-data" aria-labelledby="form-title">
                     <div>
                         <label for="article-title">Titre de l'article</label>
                         <input type="text" id="article-title" name="article-title" required 
@@ -158,7 +158,7 @@
                     </div>
     
                     <div>
-                        <button type="submit">Valider et soumettre à validation</button>
+                        <button type="submit" id="newart">Valider et soumettre à validation</button>
                     </div>
                 </form>
         </article>
@@ -194,6 +194,7 @@
     </footer>
 
 
+<script src="newarticle.js"></script>
 <script src="script.js"></script>
 
 </body>

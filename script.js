@@ -1,3 +1,4 @@
+
 // Références DOM
 const profileIcon = document.querySelector(".user-logo");
 const signLogModal = document.querySelector("#sign-log");
@@ -12,6 +13,11 @@ const disconnectButton = document.querySelector("#disconnect-button");
 const invOnly = document.querySelectorAll(".inv-only");
 const userOnly = document.querySelectorAll(".user-only");
 
+
+
+
+
+
 // Fonction pour sauvegarder l'état de connexion
 function saveConnectionState(state, user = null) {
   localStorage.setItem("isConnected", state);
@@ -22,6 +28,14 @@ function saveConnectionState(state, user = null) {
   }
 }
 
+
+
+
+
+
+
+
+
 // Fonction pour charger l'état de connexion
 function loadConnectionState() {
   return {
@@ -30,8 +44,18 @@ function loadConnectionState() {
   };
 }
 
+
+
+
+
+
 // Initialiser l'état
 let { isConnected, user } = loadConnectionState();
+
+
+
+
+
 
 // Fonction pour switcher entre user-only et inv-only
 function userInvSwitch() {
@@ -44,6 +68,9 @@ function userInvSwitch() {
   }
 }
 
+
+
+
 // Fonction pour masquer toutes les modales
 function hideAllModals() {
   signLogModal.style.display = "none";
@@ -51,12 +78,21 @@ function hideAllModals() {
   userPanelModal.style.display = "none";
 }
 
+
+
+
+
 // Initialiser l'affichage lors du chargement de la page
 document.addEventListener("DOMContentLoaded", () => {
   const { isConnected: initialConnectionState } = loadConnectionState();
   isConnected = initialConnectionState;
   userInvSwitch(); // Appliquer l'état initial
 });
+
+
+
+
+
 
 // Afficher la bonne modale au clic sur l'icône de profil
 profileIcon.addEventListener("click", () => {
@@ -77,6 +113,11 @@ profileIcon.addEventListener("click", () => {
     }
   }
 });
+
+
+
+
+
 
 // Actions pour la modale Se connecter / S'inscrire
 loginButton.addEventListener("click", () => {
@@ -101,6 +142,59 @@ disconnectButton.addEventListener("click", () => {
   userInvSwitch(); // Basculer les éléments visibles
   alert("Déconnexion réussie !"); // Message de confirmation
 });
+
+
+
+
+
+
+
+
+
+
+
+// Action pour la mise à jour des sliders de validation 
+
+// Sélectionner tous les sliders
+const pertinenceSlider = document.getElementById('pertinence-slider');
+const syntaxSlider = document.getElementById('syntax-slider');
+const pratiquesSlider = document.getElementById('pratiques-slider');
+
+// Sélectionner les éléments où afficher les valeurs
+const pertinenceValue = document.getElementById('pertinence-value');
+const syntaxValue = document.getElementById('syntax-value');
+const pratiquesValue = document.getElementById('pratiques-value');
+
+// Ajouter un événement 'input' à chaque slider pour mettre à jour la valeur affichée
+pertinenceSlider.addEventListener('input', function() {
+    pertinenceValue.textContent = pertinenceSlider.value;
+});
+
+syntaxSlider.addEventListener('input', function() {
+    syntaxValue.textContent = syntaxSlider.value;
+});
+
+pratiquesSlider.addEventListener('input', function() {
+    pratiquesValue.textContent = pratiquesSlider.value;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Actions pour la connexion
 const loginBtn = document.querySelector("#connect-button");

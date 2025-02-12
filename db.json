@@ -1,101 +1,106 @@
 {
-    "users": [
-      {
-        "id": "cb64",
-        "username": "Syl20",
-        "email": "sylvain.feillault@gmail.com",
-        "password": "!22Juin2024*"
-      },
-      {
-        "id": "533c",
-        "username": "LuK",
-        "email": "autruchon@hotmail.fr",
-        "password": "!18Octobre2018*"
-      },
-      {
-        "id": "1f3a",
-        "username": "AliceM",
-        "email": "alice.martin@example.com",
-        "password": "Alice2023#"
-      },
-      {
-        "id": "4e9b",
-        "username": "JohnDoe",
-        "email": "johndoe@example.com",
-        "password": "JohnDoe@2023"
-      },
-      {
-        "id": "7c2d",
-        "username": "ChrisP",
-        "email": "chris.pine@example.com",
-        "password": "Chris!P2023"
-      },
-      {
-        "id": "98a1",
-        "username": "MilaR",
-        "email": "mila.ross@example.com",
-        "password": "MilaR123*"
-      },
-      {
-        "id": "b673",
-        "username": "TomH",
-        "email": "tom.hardy@example.com",
-        "password": "Tom@Hardy2023"
-      },
-      {
-        "id": "c582",
-        "username": "EmmaW",
-        "email": "emma.watson@example.com",
-        "password": "EmmaW_2023#"
-      },
-      {
-        "id": "d5e7",
-        "username": "DavidB",
-        "email": "david.bowie@example.com",
-        "password": "DavidBowie2024!"
-      },
-      {
-        "id": "e463",
-        "username": "SophiaL",
-        "email": "sophia.loren@example.com",
-        "password": "Sophia123@"
-      },
-      {
-        "id": "f7a9",
-        "username": "NoahG",
-        "email": "noah.garcia@example.com",
-        "password": "NoahGarcia!2023"
-      },
-      {
-        "id": "a21f",
-        "username": "LucasD",
-        "email": "lucas.dumont@example.com",
-        "password": "Lucas@2024"
-      },
-      {
-        "id": "b65c",
-        "username": "LenaK",
-        "email": "lena.klein@example.com",
-        "password": "Lena*Klein2023"
-      },
-      {
-        "id": "c9d3",
-        "username": "OliverW",
-        "email": "oliver.wright@example.com",
-        "password": "Oliver2023*"
-      },
-      {
-        "id": "d8e1",
-        "username": "AvaS",
-        "email": "ava.smith@example.com",
-        "password": "AvaSmith!123"
-      },
-      {
-        "id": "e1b4",
-        "username": "LiamN",
-        "email": "liam.nolan@example.com",
-        "password": "LiamN@2023"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": "cb64",
+      "username": "Syl20",
+      "email": "sylvain.feillault@gmail.com",
+      "password": "!22Juin2024*"
+    },
+    {
+      "id": "533c",
+      "username": "LuK",
+      "email": "autruchon@hotmail.fr",
+      "password": "!18Octobre2018*"
+    },
+    {
+      "id": "1f3a",
+      "username": "AliceM",
+      "email": "alice.martin@example.com",
+      "password": "Alice2023#"
+    },
+    {
+      "id": "4e9b",
+      "username": "JohnDoe",
+      "email": "johndoe@example.com",
+      "password": "JohnDoe@2023"
+    },
+    {
+      "id": "7c2d",
+      "username": "ChrisP",
+      "email": "chris.pine@example.com",
+      "password": "Chris!P2023"
+    },
+    {
+      "id": "98a1",
+      "username": "MilaR",
+      "email": "mila.ross@example.com",
+      "password": "MilaR123*"
+    },
+    {
+      "id": "b673",
+      "username": "TomH",
+      "email": "tom.hardy@example.com",
+      "password": "Tom@Hardy2023"
+    },
+    {
+      "id": "c582",
+      "username": "EmmaW",
+      "email": "emma.watson@example.com",
+      "password": "EmmaW_2023#"
+    },
+    {
+      "id": "d5e7",
+      "username": "DavidB",
+      "email": "david.bowie@example.com",
+      "password": "DavidBowie2024!"
+    },
+    {
+      "id": "e463",
+      "username": "SophiaL",
+      "email": "sophia.loren@example.com",
+      "password": "Sophia123@"
+    },
+    {
+      "id": "f7a9",
+      "username": "NoahG",
+      "email": "noah.garcia@example.com",
+      "password": "NoahGarcia!2023"
+    },
+    {
+      "id": "a21f",
+      "username": "LucasD",
+      "email": "lucas.dumont@example.com",
+      "password": "Lucas@2024"
+    },
+    {
+      "id": "b65c",
+      "username": "LenaK",
+      "email": "lena.klein@example.com",
+      "password": "Lena*Klein2023"
+    },
+    {
+      "id": "c9d3",
+      "username": "OliverW",
+      "email": "oliver.wright@example.com",
+      "password": "Oliver2023*"
+    },
+    {
+      "id": "d8e1",
+      "username": "AvaS",
+      "email": "ava.smith@example.com",
+      "password": "AvaSmith!123"
+    },
+    {
+      "id": "e1b4",
+      "username": "LiamN",
+      "email": "liam.nolan@example.com",
+      "password": "LiamN@2023"
+    },
+    {
+      "id": "6cf1",
+      "username": "MaL",
+      "email": "test@cefim.com",
+      "password": "test"
+    }
+  ]
+}
